@@ -10,7 +10,7 @@ import { updateNameUser } from './user/service/updateNameUser.js';
 /*Capturar los parametros que recibimos en la URL*/ 
 const params = new URLSearchParams(window.location.search);
 /* Constante con la id del usuaario que inicio sesion */
-const ID = 1;
+const ID = params.get('id');
 /* Constante con la id del usuaario que se selecciono para chatear, cambiara cada vez que se selecione otro chat*/
 let ID2 = 0;
 

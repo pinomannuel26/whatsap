@@ -27,7 +27,7 @@ const LOGIN = async (e) => {
     if (contraseniaCorrecta && numCelularCorrecto) {
       let hora = DateTime.local().toLocaleString(DateTime.TIME_SIMPLE);
       let data  = await updateUser(user,hora);
-      window.open(`/index.html?id=${user.id}`,'_self');
+      window.open(`/home.html?id=${user.id}`,'_self');
     }else if (contraseniaCorrecta && !numCelularCorrecto) {
       Swal.fire({
         icon: 'error',
